@@ -1,0 +1,80 @@
+/* Main container: centered with padding */
+.container {
+    padding: 24px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  /* Grid layout for profile cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    padding: 24px 0;
+  }
+  
+  /* Map section styling */
+  .mapContainer {
+    margin-bottom: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .mapContainer:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Tablet adjustments */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 20px 16px;
+    }
+  
+    .grid {
+      gap: 20px;
+      padding: 20px 0;
+    }
+  
+    .mapContainer {
+      margin-bottom: 32px;
+    }
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding: 16px 12px;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: 16px 0;
+    }
+  
+    .mapContainer {
+      margin-bottom: 24px;
+      border-radius: 10px;
+    }
+  }
+  
+  /* Small screen devices */
+  @media (max-width: 480px) {
+    .container {
+      padding: 12px 8px;
+    }
+  
+    .grid {
+      gap: 12px;
+      padding: 12px 0;
+    }
+  
+    .mapContainer {
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+  }
+  

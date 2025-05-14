@@ -1,0 +1,26 @@
+.searchContainer {
+    display: flex;
+    gap: 16px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .input,
+  .select {
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 200px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease;
+  }
+  
+  .input:focus,
+  .select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  

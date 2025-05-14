@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "description": "Frontend Developer from New York",
+      "photo": "/1.jpeg",
+      "location": "New York",
+      "address": "1600 Amphitheatre Parkway, Mountain View, CA",
+      "contact": "alice.johnson@example.com",
+      "interests": ["React", "JavaScript", "UI/UX"]
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "description": "Full Stack Engineer from Texas",
+      "photo": "/2.jpeg",
+      "location": "Texas",
+      "address": "1 Infinite Loop, Cupertino, CA",
+      "contact": "bob.smith@example.com",
+      "interests": ["Node.js", "MongoDB", "React"]
+    },
+    {
+      "id": 3,
+      "name": "Clara Lee",
+      "description": "Data Scientist from California",
+      "photo": "/3.jpeg",
+      "location": "California",
+      "address": "350 5th Ave, New York, NY",
+      "contact": "clara.lee@example.com",
+      "interests": ["Python", "ML", "Data Visualization"]
+    },
+    {
+      "id": 4,
+      "name": "David Kumar",
+      "description": "Cloud Architect from Seattle",
+      "photo": "/4.jpeg",
+      "location": "Seattle",
+      "address": "500 Terry A Francois Blvd, San Francisco, CA",
+      "contact": "david.kumar@example.com",
+      "interests": ["AWS", "Docker", "Kubernetes"]
+    }
+  ]
+  

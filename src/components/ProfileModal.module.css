@@ -1,0 +1,141 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .modal {
+    background: #fff;
+    width: 100%;
+    max-width: 900px;
+    max-height: 95vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    flex-direction: row; /* Default to row layout on desktop */
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .imageSection {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 280px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top; /* Show the top part of the image */
+  }
+  
+  .infoSection {
+    flex: 2;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .name {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .mapSection {
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+ /* Media query for mobile screens */
+@media (max-width: 768px) {
+    .contentWrapper {
+      flex-direction: column; /* Stack content vertically on mobile */
+      gap: 16px; /* Reduce gap between sections */
+    }
+  
+    .imageSection,
+    .infoSection,
+    .mapSection {
+      min-width: 100%; /* Ensure each section takes full width on mobile */
+    }
+  
+    .infoSection {
+      gap: 6px; /* Reduced vertical gap between name, description, etc. */
+    }
+  
+    .mapSection {
+      height: 500px; /* Adjust map height for mobile */
+    }
+  
+    .image {
+      width: 100%; /* Make the image responsive on mobile */
+      max-width: 280px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      object-position: top; /* Show the top part of the image */
+    }
+  
+    .name {
+      font-size: 1rem; /* Slightly reduce name size for mobile */
+      margin-bottom: 4px; /* Reduce space below the name */
+    }
+  
+    .description {
+      font-size: 0.9rem; /* Reduce description font size for mobile */
+      margin-bottom: 4px; /* Reduce space below the description */
+    }
+  
+    .description p {
+      margin-bottom: 2px; /* Reduce spacing between paragraphs */
+    }
+  
+    /* Adjust for any extra margin or padding in other elements */
+    .infoSection > * {
+      margin-top: 0; /* Remove any margin at the top of child elements */
+      margin-bottom: 0; /* Remove excessive bottom margins */
+    }
+  }
+  
