@@ -1,12 +1,75 @@
-# React + Vite
+# Frontend Case Study
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive frontend built with React that simulates a simple admin-user interface. The application toggles between a Home view and an Admin Dashboard, leveraging global state management using React Context.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- 🌐 Toggle between Home and Admin Dashboard
+- 👤 Global state management with Context API
+- 📱 Responsive UI – accessible on mobile via LAN
+- � Development-ready setup with Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- React (with JSX)
+- Vite (Fast dev server & bundler)
+- Context API (for profile management)
+- CSS (for styling)
+
+## 🧩 Project Structure
+```bash
+frontend-case-study/
+├── public/
+├── src/
+│ ├── context/
+│ │ └── ProfileContext.jsx
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ └── AdminDashboard.jsx
+│ ├── App.jsx
+│ ├── App.css
+│ └── main.jsx
+├── index.html
+└── package.json
+```
+
+## 🚦 Getting Started
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/khariwalhardik/frontend-case-study.git
+cd frontend-case-study
+```
+2. **Install dependencies**
+
+```bash
+npm install
+```
+3. **Run the development server**
+
+```bash
+npm run dev
+```
+4. **View on Android (Same WiFi)**
+
+- Make sure your PC and Android are connected to the same Wi-Fi network.
+- Open the URL shown in your terminal (e.g., `http://192.168.x.x:5173/`) on your Android browser.
+
+  If it doesn't show up:
+  - Allow LAN access in your firewall, or
+  - Use `vite --host` to specify your IP.
+
+---
+
+## 🙌 Acknowledgements
+
+- [React Docs](https://react.dev/)
+- [Vite Docs](https://vitejs.dev/)
+- [Error Boundaries in React](https://react.dev/link/error-boundaries)
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
